@@ -1,0 +1,93 @@
+body {
+  background-color: rgb(27, 26, 26);
+  color: rgb(255, 255, 255);
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.navbar-brand {
+  width: 110px;
+}
+.nav-link:hover {
+  color: rgb(54, 141, 51) !important; 
+}
+
+.fav-c {
+  /* color:rgb(139, 197, 63); */
+  color: rgb(54, 141, 51);
+}
+.fav-bg {
+  background-color: rgb(40, 111, 41);
+}
+.fav-bgb {
+  background-color: rgb(10, 63, 17);
+}
+.fav-c1 {
+  color: rgb(86, 178, 78);
+}
+
+.project-1 {
+  border: 1px solid rgb(54, 141, 51);
+}
+.form-txt {
+  color: rgb(165, 165, 165);
+  opacity: 1;
+  border: 1px solid gray;
+}
+.form-txt::placeholder {
+  color: rgb(106, 101, 101);
+  opacity: 1;
+  text-align: center;
+}
+.form-txt-bg {
+  background-color: rgb(27, 26, 26);
+}
+.btn {
+  color: rgb(54, 141, 51);
+  opacity: 1;
+  border: 1px solid gray;
+}
+.contact {
+  border: 1px solid gray;
+  padding-top: 12px;
+  box-shadow: 4px 4px 8px gray;
+}
+.form-txt-bg:focus {
+    background-color:rgb(27, 26, 26);
+    color:  rgb(54, 141, 51);
+    outline: none; 
+    box-shadow: none; 
+  }
+.my-footer {
+  border: 1px solid gray;
+}
+.year {
+  font-size: 10px;
+}
+
+@media (min-width: 768px) {
+}
+@media (max-width: 576px) {
+  .edu {
+    margin-top: 25px !important;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    width: 90% !important;
+  }
+  .banner-img-top {
+    width: 60%;
+  }
+  .banner-btn {
+    justify-content: center;
+    margin-top: 0;
+  }
+  .projects {
+    width: 90% !important;
+  }
+  .contact {
+    width: 80% !important;
+  }
+}
