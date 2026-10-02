@@ -53,6 +53,20 @@ body {
   overflow-x: clip;
 }
 
+/* Justified body copy. Phones keep left alignment: their narrow columns would
+   open wide gaps between words. */
+@media (min-width: 600px) {
+  main p:not([class]),
+  .hero__intro,
+  .section__lead,
+  .bullets li,
+  .applied li {
+    text-align: justify;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
+}
+
 img,
 video,
 svg {
@@ -224,6 +238,23 @@ ul {
   color: var(--muted);
   font-size: 0.8125rem;
   line-height: 1.5;
+}
+.tag--link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text);
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s;
+}
+.tag--link .icon {
+  width: 12px;
+  height: 12px;
+  color: var(--faint);
+}
+.tag--link:hover {
+  border-color: var(--accent-line);
+  color: var(--accent-text);
 }
 .tag--accent {
   border-color: var(--accent-line);
@@ -409,20 +440,38 @@ ul {
   overflow: hidden;
   padding: var(--hero-pt) 0 var(--hero-pb);
   border-bottom: 1px solid var(--border);
-  background-image: linear-gradient(var(--border) 1px, transparent 1px),
-    linear-gradient(90deg, var(--border) 1px, transparent 1px);
-  background-size: 48px 48px;
-  background-position: center top;
 }
+/* Grid fades out through a mask rather than an opaque vignette, so the lab
+   background stays visible around the hero's edges. */
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 70% 80% at 30% 40%, transparent 0%, var(--bg) 75%);
+  background-image: linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 48px 48px;
+  background-position: center top;
+  -webkit-mask-image: radial-gradient(ellipse 70% 80% at 30% 40%, #000 0%, transparent 75%);
+  mask-image: radial-gradient(ellipse 70% 80% at 30% 40%, #000 0%, transparent 75%);
   pointer-events: none;
+}
+/* Lab background (assets/js/background.js), confined to the hero */
+.lab-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.lab-bg canvas {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .hero__grid {
   position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: minmax(0, 1.8fr) minmax(0, 1fr);
   align-items: center;
@@ -1253,6 +1302,7 @@ ul {
 }
 .doc__actions {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   margin-top: auto;
   padding-top: 16px;
