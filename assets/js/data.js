@@ -260,9 +260,9 @@ const PROJECTS = [
 
 const WORK = [
   {
-    role: "Technical Support & IT Assistant",
+    role: "Information Technology Instructor",
     org: "Smart Solution",
-    period: "2020 – 2021",
+    period: "Aug 2019 – Jan 2022",
     points: [
       "Computer hardware and software setup, troubleshooting and technical support.",
       "CCTV installation and configuration for government and private organizations.",
@@ -281,6 +281,15 @@ const LEADERSHIP = [
       "Organized research seminars and technical workshops to promote research and engineering activities.",
     ],
     evidence: ["cert:ieee-secretary"],
+  },
+  {
+    role: "Regional Secretary",
+    org: "Youth for Better Future (YBF)",
+    period: "Oct 2022 – Present",
+    points: [
+      "Organized training sessions, training camps, sports tournaments and blood donation programs.",
+    ],
+    evidence: ["photo:ybf-summer-camp-2024"],
   },
   {
     role: "IT & PR Secretary",
@@ -319,15 +328,6 @@ const LEADERSHIP = [
       "Helped organize seminars, industrial visits, football and cricket tournaments, and student activities.",
     ],
     evidence: ["photo:eee-club-tournament"],
-  },
-  {
-    role: "Campus Secretary",
-    org: "Youth for Better Future (YBF)",
-    period: "2024 – 2025",
-    points: [
-      "Organized training sessions, training camps, sports tournaments and blood donation programs.",
-    ],
-    evidence: ["photo:ybf-summer-camp-2024"],
   },
 ];
 

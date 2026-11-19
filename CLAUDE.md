@@ -153,7 +153,7 @@ Do not rename original source files unless necessary.
 **BSc in Electrical & Electronic Engineering (EEE)**  
 **Manarat International University**  
 **Graduation: 2026**  
-**CGPA: 3.76**
+**CGPA: 3.82**
 
 Do not exaggerate or round the CGPA upward.
 
@@ -544,8 +544,8 @@ For projects with real source images, prioritize those images over decorative gr
 
 ## Smart Solution
 
-**Technical Support & IT Assistant**  
-**2020–2021**
+**Information Technology Instructor**  
+**Aug 2019 – Jan 2022**
 
 Responsibilities included:
 
@@ -586,10 +586,10 @@ Use a timeline or clean professional cards.
 - Organized football and cricket tournaments.
 - Supported student activities.
 
-## Campus Secretary
+## Regional Secretary
 
 **Youth for Better Future (YBF)**  
-**2024–2025**
+**Oct 2022 – Present**
 
 - Organized training sessions.
 - Organized training camps.
@@ -1258,7 +1258,7 @@ The following information is confirmed for the portfolio.
 - Manarat International University
 - BSc in Electrical & Electronic Engineering
 - Graduation: 2026
-- CGPA: 3.76
+- CGPA: 3.82
 
 ## Confirmed Programming / Development Skills
 
